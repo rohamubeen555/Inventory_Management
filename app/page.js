@@ -21,6 +21,7 @@ export default function Home() {
       })
     })
     setInventory(inventoryList)
+    console.log(window.innerWidth);
   }
   const addItem = async(item) => {
     const docRef = doc(collection(firestore, 'inventory'), item)
